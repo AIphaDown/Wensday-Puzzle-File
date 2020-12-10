@@ -5,8 +5,38 @@
   display:block;
 }
 
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+#rowCol {
+  display: block; 
+}
+
+h1{
+  line-height: 100px;
+  margin: 0;
+  text-align: center;
+
+  -webkit-text-stroke: 1.2px black;
+  
+  font-size: 60px;
+  background-image:url("https://i.pinimg.com/originals/92/27/c8/9227c8ba897a52c6d0c0ff052eea46ae.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 body{
   text-align: center !important;
+  background-image:url("https://i.pinimg.com/originals/9e/7b/47/9e7b47982ee1b58fef26717182b4b28c.jpg");
+   height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .picture{

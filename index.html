@@ -19,26 +19,43 @@
     $.widget.bridge('uitooltip', $.ui.tooltip);
     $.widget.bridge('uibutton', $.ui.button);
   </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.js"></script>
    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <h1>Click on Image to scramble</h1>
+<h1>Click the Picture to Start</h1>
 
-  <img id="final" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Celeste_box_art_final_2.png" id="draggable" class="ui-widget-content"></img>
+<!-- <p id="difficulty-Text">Select a Difficulty</p> -->
+<select class="difficulty">
+  <option>Easy</option>
+  <option selected="selected">Normal</option>
+  <option>Hard</option>
+  <option>Novice</option>
+  <option>Expert</option>
+  <option>Custom</option>
+</select>
+
+<br></br>
+
+<form id="rowCol"> 
+  <label>Rows:</label>
+  <input readonly id="rows" />
+  <label>Columns:</label>
+  <input readonly id="columns" />
+</form>
+
+<br id="rowCol">
+
+<img id="final" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Celeste_box_art_final_2.png" ></img>
 
  <div id = "drop-zone"class="picture"></div>
  <br>
  <div id = "pieces" class="picture">
 
-  <div class = "imgContainer">
-
-  </div>
-  
  </div>
-
-  <script src="script.js"></script>
+ <br>
+ <br>
+ <script src="script.js"></script>
 </body>
 
 </html>
